@@ -1,10 +1,9 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
-
     private float time;
     private bool isRunning = false;
 
@@ -22,7 +21,6 @@ public class Timer : MonoBehaviour
         int minutes = Mathf.FloorToInt(time / 60f);
         int seconds = Mathf.FloorToInt(time % 60f);
         int milliseconds = Mathf.FloorToInt((time * 1000f) % 1000f);
-
         timerText.text = $"{minutes:00}:{seconds:00}:{milliseconds:000}";
     }
 
@@ -34,5 +32,10 @@ public class Timer : MonoBehaviour
     public void StopTimer()
     {
         isRunning = false;
+    }
+
+    public float CurrentTime
+    {
+        get { return time; }
     }
 }
