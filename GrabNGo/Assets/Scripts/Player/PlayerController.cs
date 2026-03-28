@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float crounchSpeed = 3;
     [SerializeField] float maxForce = 1; //Fuerza max de aceleración
     [SerializeField] float sensitivity = 0.1f; //Sensibilidad para input
+    [SerializeField] int blockSecs = 1; //Segundos en los que el input será bloqueado
 
     [Header("Jump & Groundcheck")]
     [SerializeField] float jumpForce = 5f;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player State Bools")]
     [SerializeField] bool isSprinting;
     [SerializeField] bool isCrouching;
+    [SerializeField] bool inputEnabled;
     #endregion
 
     //Variables de ref privadas:
@@ -44,6 +47,7 @@ public class PlayerController : MonoBehaviour
         //lock cursor ratón
         Cursor.lockState = CursorLockMode.Locked; //Mueve curson a centro
         Cursor.visible = false; //Oculta cursor
+        inputEnabled = true;
     }
 
     // Update is called once per frame
@@ -77,6 +81,13 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
+        if (!inputEnabled)
+        {
+            //parar movimiento mientras está bloqueado
+            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
+            return;
+        }
+
         Vector3 currentVelocity = rb.linearVelocity; //Ncesitamos calcular la velocidad del RB constantemente
         Vector3 targetVelocity = new Vector3(MoveInput.x, 0, MoveInput.y); //Vel a alcanzar = la direccion que pulses
         targetVelocity *= isCrouching ? crounchSpeed : (isSprinting ? sprintSpeed : speed);
@@ -97,21 +108,41 @@ public class PlayerController : MonoBehaviour
     {
         if (isGrounded) rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
+
+    public void DisableMovement(float time)
+    {
+        StartCoroutine(DisableMovementRoutine(time));
+    }
+
+    IEnumerator DisableMovementRoutine(float time)
+    {
+        inputEnabled = false;
+        MoveInput = Vector2.zero;
+
+        yield return new WaitForSeconds(time);
+
+        inputEnabled = true;
+    }
+
     #region INPUT METHODS
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!inputEnabled) return;
         MoveInput = context.ReadValue<Vector2>();
     }
     public void OnLook(InputAction.CallbackContext context)
     {
+        if (!inputEnabled) return;
         lookInput = context.ReadValue<Vector2>();
     }
     public void OnJump(InputAction.CallbackContext context)
     {
+        if (!inputEnabled) return;
         if (context.performed) jump();
     }
     public void OnCrouch(InputAction.CallbackContext context)
     {
+        if (!inputEnabled) return;
         if (context.performed)
         {
             isCrouching = !isCrouching;
@@ -120,6 +151,7 @@ public class PlayerController : MonoBehaviour
     }
     public void OnSprint(InputAction.CallbackContext context)
     {
+        if (!inputEnabled) return;
         if (context.performed && !isCrouching) isSprinting = true;
         if (context.canceled) isSprinting = false;
     }

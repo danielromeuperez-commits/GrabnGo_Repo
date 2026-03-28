@@ -12,8 +12,10 @@ GameObject:
   - component: {fileID: 6238423327965275027}
   - component: {fileID: 2837137627803014636}
   - component: {fileID: 5255425320681216521}
+  - component: {fileID: 3907090486126091856}
   - component: {fileID: 5550022287384098596}
-  m_Layer: 0
+  - component: {fileID: 1115206228714393457}
+  m_Layer: 7
   m_Name: Capsule
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -105,6 +107,7 @@ MonoBehaviour:
   crounchSpeed: 3
   maxForce: 1
   sensitivity: 0.1
+  blockSecs: 1
   jumpForce: 5
   isGrounded: 0
   groundCheck: {fileID: 5900428395276577746}
@@ -114,6 +117,20 @@ MonoBehaviour:
     m_Bits: 8
   isSprinting: 0
   isCrouching: 0
+  inputEnabled: 0
+--- !u!114 &3907090486126091856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327252234610807931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e45aab0034ffc4a40b605aa4f67b8023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
+  actualPoints: 0
 --- !u!114 &5550022287384098596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,11 +205,35 @@ MonoBehaviour:
     m_ActionId: 5d358464-362c-448c-b6c0-529f8c10a850
     m_ActionName: 'Gameply/Look[/Mouse/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5255425320681216521}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnCrouch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 463fe129-7151-47bc-aa97-eff2565de9d1
     m_ActionName: 'Gameply/Crouch[/Keyboard/ctrl]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5255425320681216521}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnSprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 58c71315-8ce8-4f7c-8600-18bc63a22cc1
     m_ActionName: 'Gameply/Sprint[/Keyboard/shift]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -200,6 +241,28 @@ MonoBehaviour:
   m_DefaultActionMap: Gameply
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!95 &1115206228714393457
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327252234610807931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4484ddf41f920045b29421140451d5b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4682733836661785060
 GameObject:
   m_ObjectHideFlags: 0
