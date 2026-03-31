@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
 
     void CameraLook()
     {
+        if(!inputEnabled) return;
         //rotacion horizontal del cuerpo del PJ
         transform.Rotate(Vector3.up * lookInput.x * sensitivity);
         //Rotacion vertical (la camara la lleva)
@@ -118,6 +119,8 @@ public class PlayerController : MonoBehaviour
     {
         inputEnabled = false;
         MoveInput = Vector2.zero;
+        
+        rb.linearVelocity = new Vector3(0, 0, 0);
 
         yield return new WaitForSeconds(time);
 
