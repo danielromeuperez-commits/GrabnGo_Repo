@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ItemCount : MonoBehaviour
 {
     public TMP_Text contadorText;
-    public PlayerController player;
+    public Collectable playerCollectable;
     public int totalItems;
 
     void Update()
@@ -14,6 +15,6 @@ public class ItemCount : MonoBehaviour
 
     void ActualizarUI()
     {
-        contadorText.text = player.TotalPoints + "/" + totalItems;
+        contadorText.text = playerCollectable.ActualPoints + "/" + totalItems;
     }
 }

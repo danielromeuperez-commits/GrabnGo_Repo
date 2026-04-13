@@ -14,6 +14,6 @@ public class IntroSceneManager : MonoBehaviour
             name = "Jugador";
 
         GameManager.Instance.currentPlayerName = name;
-        SceneManager.LoadScene("PRUEBA");
+        SceneManager.LoadScene("SCN_Level");
     }
 }
