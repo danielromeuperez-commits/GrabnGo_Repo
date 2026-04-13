@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool inputEnabled;
     #endregion
 
+    [SerializeField] int totalPoints;
+
     //Variables de ref privadas:
     Rigidbody rb; //ref al rb del PL
     Animator anim; //ref añ animator del PL
@@ -125,6 +127,17 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(time);
 
         inputEnabled = true;
+    }
+
+    public int TotalPoints
+    {
+        get { return totalPoints; }
+    }
+
+    public void AddPoints(int amount)
+    {
+        totalPoints += amount;
+        Debug.Log("Puntos: " + totalPoints);
     }
 
     #region INPUT METHODS

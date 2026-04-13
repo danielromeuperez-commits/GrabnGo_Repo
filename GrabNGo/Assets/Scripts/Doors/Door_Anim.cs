@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class Door_Anim : MonoBehaviour
 {
+    Animator anim;
     private void Awake()
     {
         anim = GetComponent<Animator>();
     }
-    Animator anim;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

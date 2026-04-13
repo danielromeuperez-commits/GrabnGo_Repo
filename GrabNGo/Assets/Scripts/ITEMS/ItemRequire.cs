@@ -6,21 +6,24 @@ public class PointRequirement : MonoBehaviour
     [SerializeField] int requiredPoints;
 
     [Header("References")]
-    [SerializeField] GameObject objectToDisable;
+    [SerializeField] GameObject objectToAnimate;
     [SerializeField] Collectable playerPoints;
+    [SerializeField] Animator anim;
 
     [Header("UI")]
     [SerializeField] GameObject warningText;
 
-
-
+    private void Awake()
+    {
+        anim= objectToAnimate.GetComponent<Animator>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             if (playerPoints.ActualPoints >= requiredPoints)
             {
-                objectToDisable.SetActive(false);
+                anim.SetBool("character_nearby", true);
             }
             else
             {
