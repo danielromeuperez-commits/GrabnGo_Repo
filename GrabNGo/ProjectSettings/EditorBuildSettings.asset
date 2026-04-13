@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/INTRO.unity
     guid: 518a9866e75bc2f4a999f8182514b41c
   - enabled: 1
-    path: Assets/Scenes/PRUEBA.unity
-    guid: 1cc50225c0226844c89393c7622557eb
+    path: Assets/Scenes/SCN_Level.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/FINAL.unity
     guid: 34bdd64830c803d439904e7eb75e779e

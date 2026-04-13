@@ -29,7 +29,7 @@ public class ItemSpawn : MonoBehaviour
         // Spawnear sin pasarse del número de puntos
         for (int i = 0; i < spawnCount && i < points.Count; i++)
         {
-            Instantiate(itemPrefab, points[i].position + Vector3.up * 2f, points[i].rotation);
+            Instantiate(itemPrefab, points[i].position + Vector3.up * 0.5f, points[i].rotation);
         }
     }
 }
