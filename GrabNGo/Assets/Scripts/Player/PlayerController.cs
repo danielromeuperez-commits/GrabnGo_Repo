@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool inputEnabled;
     #endregion
 
-    [SerializeField] int totalPoints;
-
     //Variables de ref privadas:
     Rigidbody rb; //ref al rb del PL
     Animator anim; //ref añ animator del PL
@@ -73,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
     void CameraLook()
     {
-        if(!inputEnabled) return;
+        if (!inputEnabled) return;
         //rotacion horizontal del cuerpo del PJ
         transform.Rotate(Vector3.up * lookInput.x * sensitivity);
         //Rotacion vertical (la camara la lleva)
@@ -121,23 +119,12 @@ public class PlayerController : MonoBehaviour
     {
         inputEnabled = false;
         MoveInput = Vector2.zero;
-        
+
         rb.linearVelocity = new Vector3(0, 0, 0);
 
         yield return new WaitForSeconds(time);
 
         inputEnabled = true;
-    }
-
-    public int TotalPoints
-    {
-        get { return totalPoints; }
-    }
-
-    public void AddPoints(int amount)
-    {
-        totalPoints += amount;
-        Debug.Log("Puntos: " + totalPoints);
     }
 
     #region INPUT METHODS

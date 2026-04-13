@@ -44639,6 +44639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FINISH
       objectReference: {fileID: 0}
+    - target: {fileID: 6410455836815742462, guid: 7048197e6bde0ce4e9a9a89b96c4054c, type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 2140428278}
     - target: {fileID: 7505467986774407615, guid: 7048197e6bde0ce4e9a9a89b96c4054c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.949
@@ -76180,6 +76184,117 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 456548, guid: 5b3cc55650f95e34797ed0af9c57110a, type: 3}
   m_PrefabInstance: {fileID: 1606210038}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1510354223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1510354224}
+  - component: {fileID: 1510354228}
+  - component: {fileID: 1510354227}
+  - component: {fileID: 1510354226}
+  - component: {fileID: 1510354225}
+  m_Layer: 0
+  m_Name: TIMER-Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1510354224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510354223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1510354225
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510354223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.377747, y: 24.058182, z: 42.61226}
+  m_Center: {x: -58.089592, y: 6.7708073, z: 59.790176}
+--- !u!65 &1510354226
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510354223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 20.377747, y: 24.058182, z: 41.143692}
+  m_Center: {x: -58.089592, y: 6.7708073, z: -2.8158684}
+--- !u!65 &1510354227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510354223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 80.77166, y: 14.961572, z: 97.11136}
+  m_Center: {x: -10.713161, y: 4.442926, z: 32.039406}
+--- !u!114 &1510354228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510354223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4118ba87c69552944b424ed7bc82ee74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColliderTimer
+  timer: {fileID: 2140428278}
 --- !u!1001 &1510739461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107478,6 +107593,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 177329169274456341, guid: 4a481308bf91f4b4aa895fb3d15f1877, type: 3}
   m_PrefabInstance: {fileID: 1853702396}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140428278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3169204354109146233, guid: 4a481308bf91f4b4aa895fb3d15f1877, type: 3}
+  m_PrefabInstance: {fileID: 1853702396}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc948fad904c94e419e89d63f0d366b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
 --- !u!1 &2141567322
 GameObject:
   m_ObjectHideFlags: 0
@@ -107874,3 +108000,4 @@ SceneRoots:
   - {fileID: 6398620822865373511}
   - {fileID: 881969349}
   - {fileID: 687869015}
+  - {fileID: 1510354224}
