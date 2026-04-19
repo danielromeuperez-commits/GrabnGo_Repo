@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 5573016602603392361}
   - component: {fileID: 104038942456560844}
   - component: {fileID: 1794152178518798678}
+  - component: {fileID: 2008095248987181095}
   - component: {fileID: 329274933052409292}
   - component: {fileID: 3609217569889125076}
   - component: {fileID: 7548772885835112896}
@@ -174,6 +175,7 @@ Transform:
   m_Children:
   - {fileID: 8060534209921088114}
   - {fileID: 5083279420551066746}
+  - {fileID: 5992261422985081539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &5573016602603392361
@@ -183,7 +185,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3242400524782887216}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b376911d60d70b344be24065e0077099, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -239,13 +241,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FPSController
   camHolder: {fileID: 8968190857705883376}
-  speed: 5
-  sprintSpeed: 8
-  crounchSpeed: 3
+  speed: 6
+  sprintSpeed: 9
+  crounchSpeed: 5
   maxForce: 1
   sensitivity: 0.1
   blockSecs: 1
-  jumpForce: 8
+  jumpForce: 7
   isGrounded: 0
   groundCheck: {fileID: 8060534209921088114}
   groundcheckRadius: 0.3
@@ -255,6 +257,35 @@ MonoBehaviour:
   isSprinting: 0
   isCrouching: 0
   inputEnabled: 0
+--- !u!114 &2008095248987181095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242400524782887216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f67421e8d6a1b78448d900d01777816b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GunSystem
+  fpsCam: {fileID: 2848209679961063051}
+  shootPoint: {fileID: 0}
+  impactLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  damage: 10
+  range: 100
+  spread: 0
+  shootingCooldown: 0.2
+  reloadTime: 1.5
+  allowButtonHold: 0
+  ammoSize: 30
+  bulletPerTap: 1
+  impactEffect: {fileID: 0}
+  shooting: 0
+  canShoot: 0
+  reloading: 0
 --- !u!114 &329274933052409292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,6 +404,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 58c71315-8ce8-4f7c-8600-18bc63a22cc1
     m_ActionName: 'Gameply/Sprint[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2008095248987181095}
+        m_TargetAssemblyTypeName: GunSystem, Assembly-CSharp
+        m_MethodName: OnShoot
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0c1fe7bb-5052-4b9b-81c8-0337ee4a0a82
+    m_ActionName: 'Gameply/Shoot[/Mouse/leftButton]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameply
@@ -431,6 +478,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7545953080046433260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7716894168925452631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5992261422985081539}
+  m_Layer: 7
+  m_Name: ShootPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5992261422985081539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7716894168925452631}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7545953080046433260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8968190857705883376
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +534,7 @@ Transform:
   m_GameObject: {fileID: 8968190857705883376}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.53, z: -0.195}
+  m_LocalPosition: {x: 0, y: 0.834, z: -0.195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
