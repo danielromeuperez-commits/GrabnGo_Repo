@@ -4286,10 +4286,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Labs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &77537052
 PrefabInstance:
@@ -8971,10 +8986,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Central
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &157399685
 PrefabInstance:
@@ -14100,11 +14130,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.000001, y: 0.19608502, z: 4.000001}
   m_Center: {x: 0, y: 0.09401513, z: 8.5508694e-14}
---- !u!4 &228841973 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-  m_PrefabInstance: {fileID: 1701506220879023092}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229714175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14479,10 +14504,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Labs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!4 &235789490 stripped
 Transform:
@@ -16757,10 +16797,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Central
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!4 &268263869 stripped
 Transform:
@@ -29697,10 +29752,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Storage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &456705364
 PrefabInstance:
@@ -37792,10 +37862,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Labs
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!4 &595993340 stripped
 Transform:
@@ -37867,10 +37952,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: 'Labs
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &598416986
 PrefabInstance:
@@ -45932,71 +46034,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 104703105626daa4f8b3f24af487d01d, type: 3}
---- !u!1001 &707020844
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1019755792}
-    m_Modifications:
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7790301
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7790301
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.5369987
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.026000023
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.827652
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819748578, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_Name
-      value: cuadro peque Variant (20)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &708540474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56616,10 +56653,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Rooms
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1 &877097833
 GameObject:
@@ -57953,10 +58005,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!4 &904232065 stripped
 Transform:
@@ -60331,6 +60394,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 456772, guid: f55f1ed084c77b742a3898e5da2214d3, type: 3}
   m_PrefabInstance: {fileID: 942424011}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &943475484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
+  m_PrefabInstance: {fileID: 1385510415}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &943676690 stripped
 Transform:
@@ -65711,10 +65779,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: EXIT
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1017833781
 PrefabInstance:
@@ -65931,7 +66014,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 228841973}
   - {fileID: 766529793}
   - {fileID: 1316875932}
   - {fileID: 368109374}
@@ -65952,7 +66034,6 @@ Transform:
   - {fileID: 1245207899}
   - {fileID: 1069761915}
   - {fileID: 1109272692}
-  - {fileID: 2093274752}
   - {fileID: 1933625818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77284,10 +77365,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Offices
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1201762452
 PrefabInstance:
@@ -77670,10 +77766,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: 'Cafeteria
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!4 &1204437463 stripped
 Transform:
@@ -85557,10 +85670,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Offices
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1328131273
 PrefabInstance:
@@ -88379,10 +88507,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1378216899
 PrefabInstance:
@@ -89135,7 +89274,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064889264}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064889263}
   m_SourcePrefab: {fileID: 100100000, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
 --- !u!1001 &1386430993
 PrefabInstance:
@@ -91001,10 +91146,27 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: 'LABS
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1423948539
 PrefabInstance:
@@ -94947,7 +95109,7 @@ GameObject:
   - component: {fileID: 1479048915}
   - component: {fileID: 1479048914}
   - component: {fileID: 1479048913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: floor_5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96366,63 +96528,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 445366, guid: 339299a7e2fdedf47b7788ab1a25c9df, type: 3}
   m_PrefabInstance: {fileID: 1494644604}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1494795771
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -36.751
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.866
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 55.14581
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 279409321263914761, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3541134254764156261, guid: da0134ab167fc234092b930ed83aa508, type: 3}
-      propertyPath: m_Name
-      value: ENEMY
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da0134ab167fc234092b930ed83aa508, type: 3}
 --- !u!4 &1495231054 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 469248, guid: 3845c7234a0ed4843ba4e38e2404f54d, type: 3}
@@ -103772,10 +103877,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Cafeteria
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1620789379
 PrefabInstance:
@@ -121153,10 +121273,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Cafeteria
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &1892429702
 PrefabInstance:
@@ -127105,10 +127240,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Offices
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1 &1982144371
 GameObject:
@@ -131442,7 +131592,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4010861632932827184, guid: 2e1b886e9f18d9e43bf1d35ceab0b368, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e1b886e9f18d9e43bf1d35ceab0b368, type: 3}
@@ -131785,10 +131936,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Central
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &2031830475
 PrefabInstance:
@@ -132393,10 +132551,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Storage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &2037595444
 PrefabInstance:
@@ -134018,6 +134191,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
   m_PrefabInstance: {fileID: 1385510415}
   m_PrefabAsset: {fileID: 0}
+--- !u!33 &2064889263
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943475484}
+  m_Mesh: {fileID: -2432090755550338912, guid: 8d7f97e5b265d5d488fc9541a6cffde6, type: 3}
+--- !u!23 &2064889264
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943475484}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1001 &2065441081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136065,11 +136294,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!4 &2093274752 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-  m_PrefabInstance: {fileID: 707020844}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2093618111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137970,6 +138194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9059179617036574407, guid: 112689d48a8ae0240bab873c5662693e, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139147,10 +139375,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cuadro peque Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_text
+      value: Cafeteria
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 6809704553475393379, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4132811153996022852, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &2144164560
 PrefabInstance:
@@ -139394,71 +139637,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3845c7234a0ed4843ba4e38e2404f54d, type: 3}
---- !u!1001 &1701506220879023092
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1019755792}
-    m_Modifications:
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7790301
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7790301
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.812
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.1650002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 16.550999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819444414, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3961921852819748578, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
-      propertyPath: m_Name
-      value: cuadro peque
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fe173e2cf098e3a48ab0c795708b3d4f, type: 3}
 --- !u!1001 &6398620822865373511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -139551,4 +139729,3 @@ SceneRoots:
   - {fileID: 687869015}
   - {fileID: 1510354224}
   - {fileID: 1180324654}
-  - {fileID: 1494795771}
