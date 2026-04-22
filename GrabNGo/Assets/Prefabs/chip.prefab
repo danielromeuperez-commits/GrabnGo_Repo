@@ -149,11 +149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       propertyPath: m_LocalRotation.y
@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -197,6 +197,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7303525896682611839}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1112558336103679425}
   m_SourcePrefab: {fileID: 100100000, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
 --- !u!1 &6157978914888486949 stripped
 GameObject:
@@ -224,6 +227,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00036771322, y: 0.0024707722, z: 0.0043545365}
   m_Center: {x: -0.000000017163984, y: 0.000049277616, z: -0.00003654987}
+--- !u!114 &1112558336103679425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6157978914888486949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770eb7b73a57a3f4ea80b5cadf4a7508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverEffect
+  velocidadRotacion: 1
 --- !u!4 &6790963826599021215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1437fbea989d19446b6da0769ea99981, type: 3}
