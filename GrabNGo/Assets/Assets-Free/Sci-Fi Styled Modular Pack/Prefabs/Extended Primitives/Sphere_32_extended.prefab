@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3399876}
   - component: {fileID: 2362938}
   - component: {fileID: 13528154}
+  - component: {fileID: 8728777564231960355}
   m_Layer: 3
   m_Name: Sphere_32_extended
   m_TagString: Untagged
@@ -111,3 +112,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.980785
   m_Center: {x: -0.00000017881393, y: 1, z: 0.0000005364418}
+--- !u!208 &8728777564231960355
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.98100007, y: 0.943, z: 0.98100007}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1, z: 0}
+  m_TimeToStationary: 0.5
