@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6461558}
   - component: {fileID: 3291144325746564387}
   - component: {fileID: 1817075778587490385}
+  - component: {fileID: 6659087367639349390}
   m_Layer: 0
   m_Name: door_2
   m_TagString: Untagged
@@ -172,6 +173,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2f15d419aa37640aacfa5b3fbc3ccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door_Anim
+--- !u!208 &6659087367639349390
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115324}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2, y: 2.0240002, z: 0.42800003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 2.0240002, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &141230
 GameObject:
   m_ObjectHideFlags: 0

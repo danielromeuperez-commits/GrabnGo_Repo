@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3331562}
   - component: {fileID: 2311092}
   - component: {fileID: 6565700}
+  - component: {fileID: -6657944130755908442}
   m_Layer: 0
   m_Name: big_screen
   m_TagString: Untagged
@@ -112,3 +113,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.322736, y: 3.5018215, z: 0.088799365}
   m_Center: {x: 0.046551466, y: 0.015386164, z: 0.017572433}
+--- !u!208 &-6657944130755908442
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152624}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.161, y: 1.751, z: 0.044000003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.047000002, y: 0.015000001, z: 0.018000001}
+  m_TimeToStationary: 0.5

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2201676015699366401}
   - component: {fileID: 7775167260571477287}
   - component: {fileID: 5387139019266157369}
+  - component: {fileID: 9015262746494101076}
   m_Layer: 0
   m_Name: cabinet_L_cutted
   m_TagString: Untagged
@@ -155,3 +156,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.91305256, y: 1.7671134, z: 1.0567669}
   m_Center: {x: 1.8915215, y: 0.8835567, z: 1.0471709}
+--- !u!208 &9015262746494101076
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111774}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.5000001, y: 0.88400006, z: 1.5000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 1.5000001, y: 0.88400006, z: 1.5000001}
+  m_TimeToStationary: 0.5
