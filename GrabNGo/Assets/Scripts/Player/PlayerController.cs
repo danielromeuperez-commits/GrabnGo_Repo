@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool isGrounded;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundcheckRadius = 0.3f;
+    [SerializeField] bool isJumping;
     [SerializeField] LayerMask groundLayer;
 
     [Header("Player State Bools")]
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        isJumping = false;
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,10 +60,15 @@ public class PlayerController : MonoBehaviour
         //dibujar un rayo ficticio en escena para orientacion de la camara
         Debug.DrawRay(camHolder.transform.position, camHolder.transform.forward * 100f, Color.red);
 
+        if (isGrounded && rb.linearVelocity.y <= 0)
+        {
+            isJumping = false;
+        }
     }
     private void FixedUpdate()
     {
         Movement();
+        GroundStick();
     }
 
     private void LateUpdate()
@@ -107,7 +114,24 @@ public class PlayerController : MonoBehaviour
 
     void jump()
     {
-        if (isGrounded) rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        Debug.Log("Intento saltar");
+
+        if (isGrounded)
+        {
+            Debug.Log("SALTO REAL");
+            isJumping = true;
+
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
+    }
+    void GroundStick()
+    {
+        // Solo aplicar si estás cayendo o pegado al suelo
+        if (isGrounded && rb.linearVelocity.y <= 0)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, -2f, rb.linearVelocity.z);
+        }
     }
 
     public void DisableMovement(float time)
@@ -141,8 +165,13 @@ public class PlayerController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         if (!inputEnabled) return;
-        if (context.performed) jump();
-    }
+
+        if (context.performed)
+        {
+            Debug.Log("SALTO INPUT");
+            jump();
+        }
+}
     public void OnCrouch(InputAction.CallbackContext context)
     {
         if (!inputEnabled) return;
