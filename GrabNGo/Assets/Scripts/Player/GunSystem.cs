@@ -1,120 +1,92 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem; //Necesario para trabajar con el New Input System
 
 public class GunSystem : MonoBehaviour
 {
     #region General Variables
-    [Header("General refs")]
-    [SerializeField] Camera fpsCam; //Ref si disparamos desde el centro de la camara
-    [SerializeField] Transform shootPoint; //Ref si queremos disparar desde la punta del cañon
-    [SerializeField] LayerMask impactLayer; //Layer con la que interactua el raycast
-    RaycastHit hit; //Almacen de info de objetos a los que el raycast puede interactuar;
-    [Header("Weapon parameters")]
-    [SerializeField] int damage = 10; //Daño del arma x bala
-    [SerializeField] float range = 100f; // Rango de disparo, = longitud del RAYCAST
-    [SerializeField] float spread = 0; //dispersion de balas
-    [SerializeField] float shootingCooldown = 0.2f; // tiempo entre disparos
-    [SerializeField] float reloadTime = 1.5f; //tiempo de recarga
-    [SerializeField] bool allowButtonHold = false; //si disparo se ejecuta x click (falso) o mantener (true)
-    [Header("Bullet Management")]
-    [SerializeField] int ammoSize = 30; // max de balas
-    [SerializeField] int bulletPerTap = 1; // Balas disparadas por ejecución
-    int bulletsLeft; //Balas en el cargador actual
-    [Header("FeedBack REFS")]
-    [SerializeField] GameObject impactEffect; //Ref al VFX de impacto de bala
-    [Header("Dev-Gun State Bools")]
-    [SerializeField] bool shooting; //indica disparo
-    [SerializeField] bool canShoot; //indica si podemos disoarar
-    [SerializeField] bool reloading; //indica recarga
+    [Header("General References")]
+    [SerializeField] Camera fpsCam; //Referencia a la cámara desde cuyo centro se dispara (Raycast desde centro cámara)
+    [SerializeField] RaycastHit hit; //Referencia a la info de impacto de los disparos (información de impacto Raycast)
+    [SerializeField] LayerMask interactableLayer; //Referencia a la Layer que puede impactar el disparo
+    [SerializeField] AudioSource weaponSound; //Referencia al AudioSource del arma
+
+    [Header("Interactable Stats")]
+    public float range; //Alcance de disparo (longitud del Raycast)
+    public float shootingCooldown; //Tiempo de enfriamiento del arma
+    public int damage; //Daño del arma
+
+    [Header("State Bools")]
+    [SerializeField] bool shooting; //Verdadero cuando estamos disparando
+    [SerializeField] bool canShoot; //Verdadero cuando podemos disparar
+
+    [Header("Feedback & Graphics")]
+    [SerializeField] GameObject muzzleFlash; //Objeto feedback del fogonazo
+    [SerializeField] bool attackIsSounding; //Si es verdadero, el sonido de disparo ya suena
+
     #endregion
+
     private void Awake()
     {
-        bulletsLeft = ammoSize; //cargador lleno al inicio de partida
-        canShoot = true; //poder disparar al empezar partida
+        weaponSound = GetComponent<AudioSource>();
+        attackIsSounding = false;
+        canShoot = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Condicion estricta de llamar a la rutina de disparo
-        if (canShoot && shooting && !reloading && bulletsLeft > 0)
-        {
-            StartCoroutine(ShootRoutine());
-        }
+        Inputs();
     }
 
-    IEnumerator ShootRoutine()
+    void Inputs()
     {
-        //La coruntina se encarga de medir tiempo entre disparos y gestion de gasto de balas
-        //y llamara al raycast de disparo definido en Shoot()
-
-        canShoot = false; //llave de seguridad para si disparamos no pueda disparar
-        if (!allowButtonHold) shooting = false; // cerrar el bucle de disparo por pulsación
-        for (int i = 0; i < bulletPerTap; i++)
+        //Lectura constante del Raycast si se reúnen las condiciones
+        if (canShoot && shooting)
         {
-            if (bulletsLeft <= 0) break; //segunda prevencion de errores, si no quedan balas no hago daño
-            Shoot(); //Llamado al raycast del disparo
-            bulletsLeft--; // -1 a la cantidad de balas del cargador actual
+            Shoot();
         }
-        //ESPERA ENTRE DISPAROS
-        yield return new WaitForSeconds(shootingCooldown);
-        canShoot = true;
     }
+
     void Shoot()
     {
-        //METODO MAS IMPORTANTE
-        //SE DEFINE DISPARO POR RAYCAST = UTILIZABLE CON CUALQUIER MECANICA
+        canShoot = false; //Estamos en el proceso de disparo
 
-        //Almacenar direccion de disparo y modificar en caso de spread
         Vector3 direction = fpsCam.transform.forward;
-        //dispaersion aleatoria segun valor spread
-        direction.x += Random.Range(-spread, spread);
-        direction.y += Random.Range(-spread, spread);
 
-        //DECLARACION DE RAYCAST
-        //Anatomia: Physics.Raycast(Origen del rayo, dirección, almacen de la info de inpacto, longitud del rayo, layer con la q impacta el rayo
-        if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range, impactLayer))
+        //Raycast del disparo
+        if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range, interactableLayer))
         {
-            //Aqui puedo codear todos los efectos q quiero en mi interaccion
-            Debug.Log(hit.collider.name);
             if (hit.collider.CompareTag("Enemy"))
             {
-                EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-                enemyHealth.TakeDamage(damage);
+                EnemyHealth enemyScript = hit.collider.GetComponent<EnemyHealth>();
+                enemyScript.TakeDamage(damage);
             }
         }
-    }
-    void Reload()
-    {
-        if (bulletsLeft < ammoSize && !reloading) StartCoroutine(ReloadRoutine());
+
+        if (!IsInvoking(nameof(ResetShoot)) && !canShoot)
+        {
+            Invoke(nameof(ResetShoot), shootingCooldown);
+        }
     }
 
-    IEnumerator ReloadRoutine()
+    void ResetShoot()
     {
-        reloading = true; //Recargando, no podemos recargar
-        //AQUI LLAMARIAMOS A LA ANIMACIÓN DE RECARGA
-        yield return new WaitForSeconds(reloadTime); //esperar x tiempo como dura la aniamcion de recarga
-        bulletsLeft = ammoSize; // recargado
-        reloading = false; // Termina la recarga, podemos volver a hacerlo
+        canShoot = true;
     }
 
-    #region Input Methods
+    #region Input System
     public void OnShoot(InputAction.CallbackContext context)
     {
-        if (allowButtonHold)
+        if (context.performed)
         {
-            shooting = context.ReadValueAsButton(); //Detecta constantemente si el boton esta apretado
+            shooting = true;
         }
-        else
+        else if (context.canceled)
         {
-            if (context.performed) shooting = true; //Shooting solo es true por pulsación
+            shooting = false;
         }
-    }
-    public void OnReload(InputAction.CallbackContext context)
-    {
-        if (context.performed) Reload();
     }
     #endregion
-
 }
