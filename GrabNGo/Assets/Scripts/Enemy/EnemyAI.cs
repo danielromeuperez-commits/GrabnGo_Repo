@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -43,6 +44,7 @@ public class EnemyAI : MonoBehaviour
     float stuckTimer; //Reloj que cuenta el tiempo de estar stuck
     float lastCheckTime; //Tiempo de chequeo previo a estar stuck
     Vector3 lastPosition; //Posición del último walkpoint perseguido
+    AudioSource audioSource;
     #endregion
 
     private void Awake()
@@ -54,6 +56,7 @@ public class EnemyAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         lastPosition = transform.position;
         lastCheckTime = Time.time;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -87,9 +90,27 @@ public class EnemyAI : MonoBehaviour
         else if (targetInSightRange && !targetInAttackRange) ChaseTarget();
         else if (targetInSightRange && targetInAttackRange) AttackTarget();
     }
+    void PlayLoop()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+    }
+
+    void StopLoop()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 
     void Patroling()
     {
+
+        PlayLoop();
         //Define que el objeto patrulle y genere puntos de patrulla random
         //1 - Revisa si hay punto a patrullar
         if (!walkPointSet)
@@ -158,13 +179,14 @@ public class EnemyAI : MonoBehaviour
     void ChaseTarget()
     {
         //Le dice al agente que persiga al target
+        PlayLoop();
         agent.SetDestination(target.position);
     }
 
     void AttackTarget()
     {
         //Acción que determina el ataque al objetivo
-
+        StopLoop();
         //1- Detener el movimiento
         agent.SetDestination(transform.position);
 
@@ -186,7 +208,7 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             Rigidbody rb = Instantiate(projectile, shootPoint.position, Quaternion.identity).GetComponent<Rigidbody>();
-
+            AudioManager.Instance.PlaySFX(3);
 
             rb.AddForce(transform.forward * shootSpeedZ + transform.up * shootSpeedY, ForceMode.Impulse);
 
