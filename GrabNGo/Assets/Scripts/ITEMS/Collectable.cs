@@ -21,6 +21,7 @@ public class Collectable : MonoBehaviour
         if (collision.gameObject.CompareTag("PickUp"))
         {
             actualPoints += 1;
+            AudioManager.Instance.PlaySFX(0);
             collision.gameObject.SetActive(false);
         }
     }
