@@ -18,9 +18,9 @@ public class GunSystem : MonoBehaviour
     [SerializeField] float reloadTime = 1.5f; //tiempo de recarga
     [SerializeField] bool allowButtonHold = false; //si disparo se ejecuta x click (falso) o mantener (true)
     [Header("Bullet Management")]
-    [SerializeField] int ammoSize = 30; // max de balas
+    [SerializeField] public int ammoSize = 30; // max de balas
     [SerializeField] int bulletPerTap = 1; // Balas disparadas por ejecución
-    int bulletsLeft; //Balas en el cargador actual
+    [SerializeField] public int bulletsLeft; //Balas en el cargador actual
     [Header("FeedBack REFS")]
     [SerializeField] GameObject impactEffect; //Ref al VFX de impacto de bala
     [Header("Dev-Gun State Bools")]
