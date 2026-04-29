@@ -23,6 +23,7 @@ public class EnemyHealth : MonoBehaviour
         {
             health = 0; //La vida no puede bajad de 0
             deathVFX.SetActive(true); //Encender el VFX
+            AudioManager.Instance.PlaySFX(6);
             deathVFX.transform.position = enemyRend.transform.position; //colocarlo en la posicion del enemigo
             gameObject.SetActive(false);
         }
